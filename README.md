@@ -1,69 +1,30 @@
-# React + TypeScript + Vite
+# CineRec - Movie suggestions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ As for the basic suggestion feature, 
+                    it uses <strong>TF-IDF</strong> technique to process and calculate the similarity between 
+                    keywords and sets to give the most suitable suggestion. 
+                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-purple-600 font-bold">
+                        This feature is still under development in the future.</span></p>
 
-Currently, two official plugins are available:
+## Real interface
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot 2025-07-11 010236](https://github.com/user-attachments/assets/88a6f0fb-226a-48b2-9265-868e9fce9735)
 
-## Expanding the ESLint configuration
+![Screenshot 2025-07-11 010058](https://github.com/user-attachments/assets/d8b0baca-22d5-47aa-8bbd-bae5d60c3113)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Screenshot 2025-07-11 010128](https://github.com/user-attachments/assets/43651c81-6bb8-45dc-ab75-3f10256db0d3)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![Screenshot 2025-07-11 010147](https://github.com/user-attachments/assets/e4d28976-e728-477a-ad16-a00ce27ac4cf)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+![Screenshot 2025-07-11 010201](https://github.com/user-attachments/assets/8200edac-2aa6-45cc-86e4-74de3ce71d0a)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![Screenshot 2025-07-11 010216](https://github.com/user-attachments/assets/d0c83917-5f08-4811-86d6-85b05cbdb4ef)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+[mobileDemo.webm](https://github.com/user-attachments/assets/b93456a6-c8b5-4f0c-87f7-61228f0c4d57)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+[mobileS2.webm](https://github.com/user-attachments/assets/256a6662-5a1d-4148-a12e-1bcbfeefcfaf)
+
+[MacbookAir.webm](https://github.com/user-attachments/assets/2cbf360d-be10-4417-af99-8843a8246cf9)
+
+[MacbookAir2.webm](https://github.com/user-attachments/assets/51f1daaa-8a40-4200-8986-d96d0d90e2a0)
